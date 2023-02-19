@@ -1,4 +1,4 @@
-import dessin from '../svg/dessin.svg'
+import puzzle_svg from '../svg/puzzle.svg'
 import { Animal } from './animal'
 import { Utils } from './utils'
 
@@ -20,7 +20,7 @@ export class ProblemToSolve {
     }
 
     render(div: HTMLDivElement) {
-        div.innerHTML = dessin
+        div.innerHTML = puzzle_svg
         const svg: SVGSVGElement = div.querySelector('svg')!
         svg.querySelector('#number-left')!.innerHTML = this.number_or_animal(this.number_1);
         svg.querySelector('#number-up')!.innerHTML = this.number_or_animal(this.number_2);

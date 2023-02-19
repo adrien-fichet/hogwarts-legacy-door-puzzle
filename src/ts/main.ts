@@ -26,13 +26,13 @@ animals.forEach(animal => {
 
 // First puzzle
 const problem_1 = new ProblemToSolve(animals, 11, 2, '?', 21)
-problem_1.render(document.querySelector('#dessin-1')!)
+problem_1.render(document.querySelector('#puzzle-svg-1')!)
 const choice_1 = new Choice(animals)
 choice_1.render(document.querySelector('#choice-1')!)
 
 // Second puzzle
 const problem_2 = new ProblemToSolve(animals, 5, 9, '??', 17)
-problem_2.render(document.querySelector('#dessin-2')!)
+problem_2.render(document.querySelector('#puzzle-svg-2')!)
 const choice_2 = new Choice(animals)
 choice_2.render(document.querySelector('#choice-2')!)
 
